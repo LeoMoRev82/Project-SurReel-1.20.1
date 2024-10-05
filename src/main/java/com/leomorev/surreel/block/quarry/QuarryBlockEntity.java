@@ -51,6 +51,7 @@ public class QuarryBlockEntity extends MinerBuilderBlockEntity implements HasMod
     private int speed = 0;
     private int progress = 0;
     private int ticks;
+    private int OPERATIONS_PER_TICK = 1;
 
     private List<BlockPos> blockBreakQueue = new ArrayList<>();
 
@@ -88,12 +89,14 @@ public class QuarryBlockEntity extends MinerBuilderBlockEntity implements HasMod
                         pbe.receiveEnergy(received, false);
                         pbe.setQuarryModuleArea(be.miningArea);
                         be.extractEnergy(received);
+                        be.setChanged();
                     }
                 }
             }
-            be.getStorage().tryEjectBuffer(level, pos, be.maxItemsPerTransfer);
-            be.setChanged();
         }
+
+        be.getStorage().tryEjectBuffer(level, pos, be.maxItemsPerTransfer);
+        be.setChanged();
 
         //STAGE 1
         if(be.stage1 && be.hasEnoughEnergy(200)){
@@ -114,32 +117,44 @@ public class QuarryBlockEntity extends MinerBuilderBlockEntity implements HasMod
         }
 
         //STAGE 3
-        if(be.stage3 && !be.halted){
-            be.progress++;
-            if(be.progress > be.speed && !be.blockBreakQueue.isEmpty()) {
-                ItemStack tool = new ItemStack(Items.NETHERITE_PICKAXE);
-                for(int i = 0; i < be.enchantments.size(); i++){
-                    tool.enchant(be.enchantments.get(i).enchantment(), be.enchantments.get(i).level());
-                }
 
-                BlockPos targetPos = be.blockBreakQueue.get(0);
-                float hardness = level.getBlockState(targetPos).getDestroySpeed(level, targetPos);
-                int energyUse = getBreakEnergy(40, be, hardness);
-                 if(be.hasEnoughEnergy(energyUse)){
-                     mineBlock(level, targetPos, QuarryFakePlayer.get((ServerLevel) level), tool, false);
-                     be.getStorage().collectAndStore(level, pos, targetPos);
-                     be.blockBreakQueue.remove(0);
-                     be.extractEnergy(energyUse);
-                     be.setChanged();
-                 }
-                be.resetProgress();
-            }
-            if(be.blockBreakQueue.isEmpty()) {
-                be.resetProgress();
-                be.stage3 = false;
-                be.stage4 = true;
+        if(be.hasReTickerModule()){
+            be.OPERATIONS_PER_TICK = 4;
+        }
+        else {
+            be.OPERATIONS_PER_TICK = 1;
+        }
+
+        for(int o = 0; o < be.OPERATIONS_PER_TICK; o++){
+            if(be.stage3 && !be.halted){
+                be.progress++;
+                if(be.progress > be.speed && !be.blockBreakQueue.isEmpty()) {
+                    ItemStack tool = new ItemStack(Items.NETHERITE_PICKAXE);
+                    for(int i = 0; i < be.enchantments.size(); i++){
+                        tool.enchant(be.enchantments.get(i).enchantment(), be.enchantments.get(i).level());
+                    }
+
+                    BlockPos targetPos = be.blockBreakQueue.get(0);
+                    float hardness = level.getBlockState(targetPos).getDestroySpeed(level, targetPos);
+                    int energyUse = getBreakEnergy(40, be, hardness);
+                    if(be.hasEnoughEnergy(energyUse)){
+                        mineBlock(level, targetPos, QuarryFakePlayer.get((ServerLevel) level), tool, false);
+                        be.getStorage().collectAndStore(level, pos, targetPos);
+                        be.blockBreakQueue.remove(0);
+                        be.extractEnergy(energyUse);
+                        be.setChanged();
+                    }
+                    be.resetProgress();
+                }
+                if(be.blockBreakQueue.isEmpty()) {
+                    be.resetProgress();
+                    be.stage3 = false;
+                    be.stage4 = true;
+                }
             }
         }
+
+
 
         //STAGE 4
         if(be.stage4){
@@ -165,18 +180,21 @@ public class QuarryBlockEntity extends MinerBuilderBlockEntity implements HasMod
             if (this.level.getBlockState(module.pos()).getBlock() instanceof ModuleEnchants enchants) {
                 if(enchants.getEnchantment().enchantment() == Enchantments.SILK_TOUCH){
                     silk.add(enchants.getEnchantment());
+                    continue;
                 }
                 if(enchants.getEnchantment().enchantment() == Enchantments.BLOCK_FORTUNE){
                     fortune.add(enchants.getEnchantment());
+                    continue;
                 }
                 if(enchants.getEnchantment().enchantment() == Enchantments.BLOCK_EFFICIENCY){
                     efficiency.add(enchants.getEnchantment());
                 }
             }
         }
-        fortune.addAll(EnchantmentLevel.breakDownFortune(fortune));
-        efficiency.addAll(EnchantmentLevel.breakDownEfficiency(efficiency));
-        silk.addAll(EnchantmentLevel.breakDownSilkTouch(silk));
+
+        fortune = EnchantmentLevel.breakDownFortune(fortune);
+        efficiency = EnchantmentLevel.breakDownEfficiency(efficiency);
+        silk = EnchantmentLevel.breakDownSilkTouch(silk);
         this.enchantments = Stream.of(fortune, efficiency, silk).flatMap(Collection::stream).collect(Collectors.toList());
     }
 
@@ -226,6 +244,8 @@ public class QuarryBlockEntity extends MinerBuilderBlockEntity implements HasMod
                 module.setStatus(this.level, modulePos, moduleBlock, true);
             }
         }
+
+        //System.out.println(this.modules);
 
         //after = System.nanoTime();
         //1000 - ns - micro

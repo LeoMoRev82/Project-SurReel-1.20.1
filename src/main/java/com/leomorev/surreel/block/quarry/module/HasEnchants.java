@@ -10,21 +10,21 @@ public interface HasEnchants {
     List<EnchantmentLevel> getEnchants();
 
     default int getFortuneLevel() {
-        if(getEnchants().stream().map(EnchantmentLevel::enchantment).collect(Collectors.toList()).contains(Enchantments.BLOCK_FORTUNE)){
-            return getEnchants().stream().flatMapToInt(n -> IntStream.of(n.level())).sum();
+        if(getEnchants().stream().map(EnchantmentLevel::enchantment).toList().contains(Enchantments.BLOCK_FORTUNE)){
+            return getEnchants().stream().filter(n -> n.enchantment() == Enchantments.BLOCK_FORTUNE).flatMapToInt(l -> IntStream.of(l.level())).sum();
         }
         return 0;
     }
 
     default int getEfficiencyLevel() {
-        if(getEnchants().stream().map(EnchantmentLevel::enchantment).collect(Collectors.toList()).contains(Enchantments.BLOCK_EFFICIENCY)){
-            return getEnchants().stream().flatMapToInt(n -> IntStream.of(n.level())).sum();
+        if(getEnchants().stream().map(EnchantmentLevel::enchantment).toList().contains(Enchantments.BLOCK_EFFICIENCY)){
+            return getEnchants().stream().filter(n -> n.enchantment() == Enchantments.BLOCK_EFFICIENCY).flatMapToInt(l -> IntStream.of(l.level())).sum();
         }
         return 0;
     }
 
     default int getSilkTouchLevel() {
-        if(getEnchants().stream().map(EnchantmentLevel::enchantment).collect(Collectors.toList()).contains(Enchantments.SILK_TOUCH)){
+        if(getEnchants().stream().map(EnchantmentLevel::enchantment).toList().contains(Enchantments.SILK_TOUCH)){
             return 1;
         }
         return 0;

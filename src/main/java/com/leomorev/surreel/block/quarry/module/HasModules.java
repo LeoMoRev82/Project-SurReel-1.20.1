@@ -15,7 +15,7 @@ public interface HasModules {
     List<Module> getModules();
 
     private boolean get(ResourceLocation name){
-        return getModules().stream().map(Module::name).collect(Collectors.toList()).contains(name);
+        return getModules().stream().map(Module::name).toList().contains(name);
     }
 
     //void updateModules() {
@@ -57,4 +57,5 @@ public interface HasModules {
     default boolean hasEfficiencyModule()   {return get(QuarryModule.Constant.EFFICIENCY.moduleName());}
     default boolean hasPumpModule()         {return get(QuarryModule.Constant.PUMP.moduleName());}
     default boolean hasFreezerModule()      {return get(QuarryModule.Constant.FREEZER.moduleName());}
+    default boolean hasReTickerModule()     {return get(QuarryModule.Constant.RE_TICKER.moduleName());}
 }

@@ -7,4 +7,9 @@ public class ReTickerModule extends ModuleBlock implements QuarryModule{
     public ResourceLocation moduleName() {
         return Constant.RE_TICKER.moduleName();
     }
+
+    @Override
+    public boolean isStackable() {
+        return false;
+    }
 }
