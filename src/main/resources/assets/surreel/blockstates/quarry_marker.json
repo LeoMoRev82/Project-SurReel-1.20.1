@@ -1,0 +1,56 @@
+{
+  "variants": {
+    "facing=down,lit=true": {
+      "model": "surreel:block/quarry_marker_lit",
+      "x": 180
+    },
+    "facing=down,lit=false": {
+      "model": "surreel:block/quarry_marker",
+      "x": 180
+    },
+    "facing=east,lit=true": {
+      "model": "surreel:block/quarry_marker_lit",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east,lit=false": {
+      "model": "surreel:block/quarry_marker",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,lit=true": {
+      "model": "surreel:block/quarry_marker_lit",
+      "x": 90
+    },
+    "facing=north,lit=false": {
+      "model": "surreel:block/quarry_marker",
+      "x": 90
+    },
+    "facing=south,lit=true": {
+      "model": "surreel:block/quarry_marker_lit",
+      "x": 90,
+      "y": 180
+    },
+    "facing=south,lit=false": {
+      "model": "surreel:block/quarry_marker",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,lit=true": {
+      "model": "surreel:block/quarry_marker_lit"
+    },
+    "facing=up,lit=false": {
+      "model": "surreel:block/quarry_marker"
+    },
+    "facing=west,lit=true": {
+      "model": "surreel:block/quarry_marker_lit",
+      "x": 90,
+      "y": 270
+    },
+    "facing=west,lit=false": {
+      "model": "surreel:block/quarry_marker",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

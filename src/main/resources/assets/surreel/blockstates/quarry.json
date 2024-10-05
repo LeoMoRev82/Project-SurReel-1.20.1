@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "surreel:block/quarry",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "surreel:block/quarry"
+    },
+    "facing=south": {
+      "model": "surreel:block/quarry",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "surreel:block/quarry",
+      "y": 270
+    }
+  }
+}

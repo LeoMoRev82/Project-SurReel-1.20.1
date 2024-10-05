@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "surreel:block/damming_block"
+    }
+  }
+}

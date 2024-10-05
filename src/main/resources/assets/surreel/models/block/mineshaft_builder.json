@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    	"particle": "surreel:block/mineshaft_builder/side",
+		"top": 		"surreel:block/mineshaft_builder/end",
+		"down": 	"surreel:block/mineshaft_builder/end",
+        "north": 	"surreel:block/mineshaft_builder/front_off",
+        "east": 	"surreel:block/mineshaft_builder/side",
+        "south": 	"surreel:block/mineshaft_builder/back",
+        "west": 	"surreel:block/mineshaft_builder/side"
+  }
+}

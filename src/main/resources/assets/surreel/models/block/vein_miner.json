@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    	"particle": "surreel:block/vein_miner/side",
+		"top": 		"surreel:block/vein_miner/end",
+		"down": 	"surreel:block/vein_miner/end",
+        "north": 	"surreel:block/vein_miner/front_off",
+        "east": 	"surreel:block/vein_miner/side",
+        "south": 	"surreel:block/vein_miner/back",
+        "west": 	"surreel:block/vein_miner/side"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    	"particle": "surreel:block/modules/efficiency/side",
+		"top": 		"surreel:block/modules/efficiency/top",
+		"down": 	"surreel:block/modules/efficiency/end",
+        "north": 	"surreel:block/modules/efficiency/front_off",
+        "east": 	"surreel:block/modules/efficiency/side",
+        "south": 	"surreel:block/modules/efficiency/back",
+        "west": 	"surreel:block/modules/efficiency/side"
+  }
+}

@@ -1,0 +1,55 @@
+{
+    "multipart": [
+        {
+            "apply": {"model": "surreel:block/transport_pipe/center"}
+        },
+        {
+            "when": {"north": "input"},
+            "apply": {"model": "surreel:block/transport_pipe/input"}
+        },
+        {
+            "when": {"south": "input"},
+            "apply": {"model": "surreel:block/transport_pipe/input", "y": 180}
+        },
+        {
+            "when": {"east": "input"},
+            "apply": {"model": "surreel:block/transport_pipe/input", "y": 90}
+        },
+        {
+            "when": {"west": "input"},
+            "apply": {"model": "surreel:block/transport_pipe/input", "y": 270}
+        },
+        {
+            "when": {"down": "input"},
+            "apply": {"model": "surreel:block/transport_pipe/input", "x": 90}
+        },
+        {
+            "when": {"up": "input"},
+            "apply": {"model": "surreel:block/transport_pipe/input", "x": 270}
+        },
+        {
+            "when": {"north": "output"},
+            "apply": {"model": "surreel:block/transport_pipe/output"}
+        },
+        {
+            "when": {"south": "output"},
+            "apply": {"model": "surreel:block/transport_pipe/output", "y": 180}
+        },
+        {
+            "when": {"east": "output"},
+            "apply": {"model": "surreel:block/transport_pipe/output", "y": 90}
+        },
+        {
+            "when": {"west": "output"},
+            "apply": {"model": "surreel:block/transport_pipe/output", "y": 270}
+        },
+        {
+            "when": {"down": "output"},
+            "apply": {"model": "surreel:block/transport_pipe/output", "x": 90}
+        },
+        {
+            "when": {"up": "output"},
+            "apply": {"model": "surreel:block/transport_pipe/output", "x": 270}
+        }
+    ]
+}

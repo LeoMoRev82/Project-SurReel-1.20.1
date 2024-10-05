@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    	"particle": "surreel:block/modules/fortune/side",
+		"top": 		"surreel:block/modules/fortune/top",
+		"down": 	"surreel:block/modules/fortune/end",
+        "north": 	"surreel:block/modules/fortune/front_on",
+        "east": 	"surreel:block/modules/fortune/side",
+        "south": 	"surreel:block/modules/fortune/back",
+        "west": 	"surreel:block/modules/fortune/side"
+  }
+}

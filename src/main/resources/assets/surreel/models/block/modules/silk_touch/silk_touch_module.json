@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    	"particle": "surreel:block/modules/silk_touch/side",
+		"top": 		"surreel:block/modules/silk_touch/top",
+		"down": 	"surreel:block/modules/silk_touch/end",
+        "north": 	"surreel:block/modules/silk_touch/front_off",
+        "east": 	"surreel:block/modules/silk_touch/side",
+        "south": 	"surreel:block/modules/silk_touch/back",
+        "west": 	"surreel:block/modules/silk_touch/side"
+  }
+}

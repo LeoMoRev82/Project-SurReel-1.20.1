@@ -1,0 +1,41 @@
+{
+	"item.surreel.test" 					: "Test Item",
+	
+	"block.surreel.ashed_stone" 			: "Ashed Stone",
+	"block.surreel.ashed_cobblestone" 		: "Ashed Cobblestone",
+	"block.surreel.ashed_stonebricks" 		: "Ashed Stone Bricks",
+	"block.surreel.damming_block" 			: "Damming Block",
+	
+	"block.surreel.mineshaft_builder" 		: "Mineshaft Builder - scrapped",
+	"block.surreel.vein_miner" 				: "Vein Miner",
+	"block.surreel.simple_quarry" 			: "Simple Quarry",
+	"block.surreel.quarry" 					: "Quarry",
+	"block.surreel.quarry_marker" 			: "Quarry Marker",
+
+	"block.surreel.silk_touch_module" 		: "Silk Touch Module",
+	"block.surreel.fortune_i_module" 		: "Fortune I Module",
+	"block.surreel.fortune_ii_module" 		: "Fortune II Module",
+	"block.surreel.fortune_iii_module" 		: "Fortune III Module",
+	"block.surreel.efficiency_i_module" 	: "Efficiency I Module",
+	"block.surreel.efficiency_ii_module" 	: "Efficiency II Module",
+	"block.surreel.efficiency_iii_module" 	: "Efficiency III Module",
+	"block.surreel.efficiency_iv_module" 	: "Efficiency IV Module",
+	"block.surreel.efficiency_v_module" 	: "Efficiency V Module",
+
+	"block.surreel.pump" 					: "Pump",
+	"block.surreel.trash_can" 				: "Trash Can",
+
+	"block.surreel.oil_refinery" 			: "Oil Refinery",
+	"block.surreel.recycler" 				: "Recycler",
+	"block.surreel.block_breaker" 			: "Block Breaker",
+	"block.surreel.block_placer" 			: "Block Placer",
+
+	"block.surreel.crop_farm" 				: "Crop Farm",
+	"block.surreel.tree_farm" 				: "Tree Farm",
+	"block.surreel.waste_treatment" 		: "Waste Treatment Plant",
+
+	"block.surreel.solar_panel" 			: "Solar Panel",
+	"block.surreel.burner_generator" 		: "Burner Generator",
+	"block.surreel.geothermal_generator"	: "Geothermal Generator",
+	"block.surreel.gas_generator" 			: "Gas Generator"
+}

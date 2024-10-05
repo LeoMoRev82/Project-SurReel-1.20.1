@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    	"particle": "surreel:block/pump/side",
+		"top": 		"surreel:block/pump/top",
+		"down": 	"surreel:block/pump/end",
+        "north": 	"surreel:block/pump/front_off",
+        "east": 	"surreel:block/pump/side",
+        "south": 	"surreel:block/pump/back",
+        "west": 	"surreel:block/pump/side"
+  }
+}

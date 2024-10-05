@@ -1,0 +1,293 @@
+{
+  "variants": {
+    "facing=east,down=none,up=input,west=input,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross_2",
+      "y": 90,
+      "x": 0
+    },
+
+    "facing=east,down=input,up=none,west=input,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross_2",
+      "y": 270,
+      "x": 180
+    },
+
+    "facing=east,down=input,up=input,west=none,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_six_cross_2",
+      "y": 90
+    },
+    "facing=east,down=input,up=input,west=input,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_six_cross_2",
+      "y": 90
+    },
+
+    "facing=east,down=input,up=input,west=input,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross",
+      "y": 270,
+      "x": 270
+    },
+    "facing=east,down=input,up=input,west=input,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross",
+      "y": 90,
+      "x": 90
+    },
+
+    "facing=east,down=none,up=input,west=input,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross",
+      "y": 90
+    },
+    "facing=east,down=none,up=input,west=none,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross",
+      "y": 180
+    },
+
+    "facing=east,down=input,up=none,west=none,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross_2",
+      "x": 180,
+      "y": 270
+    },
+    "facing=east,down=input,up=input,west=none,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east,down=input,up=none,west=input,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "y": 90
+    },
+    "facing=east,down=input,up=none,west=input,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "y": 180
+    },
+
+    "facing=east,down=none,up=input,west=input,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_three_cross",
+      "y": 90,
+      "x": 90
+    },
+    "facing=east,down=none,up=none,west=none,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_3",
+      "y": 180
+    },
+    "facing=east,down=input,up=input,west=none,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_3",
+      "y": 180,
+      "x": 90
+    },
+    "facing=east,down=input,up=input,west=input,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_3",
+      "y": 180,
+      "x": 90
+    },
+    "facing=east,down=none,up=input,west=none,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east,down=none,up=input,west=input,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east,down=none,up=none,west=input,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_3",
+      "y": 180
+    },
+    "facing=east,down=none,up=input,west=none,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "y": 270
+    },
+    "facing=east,down=none,up=none,west=input,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_three_cross_2",
+      "y": 90
+    },
+    "facing=east,down=none,up=none,west=input,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_three_cross_2",
+      "x": 180,
+      "y": 270
+    },
+    "facing=east,down=input,up=none,west=input,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_three_cross",
+      "y": 90
+    },
+    "facing=east,down=input,up=none,west=none,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "y": 270,
+      "x": 270
+    },
+
+    "facing=east,down=input,up=none,west=none,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_turn",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east,down=none,up=input,west=none,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_turn",
+      "y": 270,
+      "x": 270
+    },
+    "facing=east,down=none,up=none,west=none,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_turn_2"
+    },
+    "facing=east,down=none,up=none,west=none,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_turn_2",
+      "x": 180
+    },
+
+    "facing=east,down=none,up=none,west=input,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe",
+      "y": 270
+    },
+    "facing=east,down=none,up=none,west=none,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe",
+      "y": 270
+    },
+
+
+
+
+    "facing=north": {
+      "model": "surreel:block/transport_pipe/transport_pipe",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "surreel:block/transport_pipe/transport_pipe"
+    },
+    "facing=west": {
+      "model": "surreel:block/transport_pipe/transport_pipe",
+      "y": 90
+    },
+
+
+
+    "facing=up,down=input,east=input,west=input,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_six_cross"
+    },
+    "facing=up,down=none,east=input,west=input,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_six_cross"
+    },
+
+    "facing=up,down=input,east=none,west=input,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross"
+    },
+    "facing=up,down=input,east=input,west=input,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross",
+      "y": 90
+    },
+    "facing=up,down=input,east=input,west=none,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross",
+      "y": 180
+    },
+    "facing=up,down=input,east=input,west=input,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross",
+      "y": 270
+    },
+    "facing=up,down=none,east=none,west=input,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross"
+    },
+    "facing=up,down=none,east=input,west=input,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross",
+      "y": 90
+    },
+    "facing=up,down=none,east=input,west=none,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross",
+      "y": 180
+    },
+    "facing=up,down=none,east=input,west=input,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_five_cross",
+      "y": 270
+    },
+
+    "facing=up,down=input,east=input,west=input,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross",
+      "y": 90
+    },
+    "facing=up,down=input,east=none,west=none,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross"
+    },
+    "facing=up,down=input,east=input,west=none,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2"
+    },
+    "facing=up,down=input,east=none,west=input,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "y": 90
+    },
+    "facing=up,down=input,east=none,west=input,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "y": 180
+    },
+    "facing=up,down=input,east=input,west=none,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "y": 270
+    },
+    "facing=up,down=none,east=input,west=input,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross",
+      "y": 90
+    },
+    "facing=up,down=none,east=none,west=none,north=input,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross"
+    },
+    "facing=up,down=none,east=input,west=none,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2"
+    },
+    "facing=up,down=none,east=none,west=input,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "y": 90
+    },
+    "facing=up,down=none,east=none,west=input,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "y": 180
+    },
+    "facing=up,down=none,east=input,west=none,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_four_cross_2",
+      "y": 270
+    },
+
+    "facing=up,down=input,east=none,west=none,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_three_cross"
+    },
+    "facing=up,down=input,east=none,west=input,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_three_cross",
+      "y": 90
+    },
+    "facing=up,down=input,east=none,west=none,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_three_cross",
+      "y": 180
+    },
+    "facing=up,down=input,east=input,west=none,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_three_cross",
+      "y": 270
+    },
+    "facing=up,down=none,east=none,west=none,north=none,south=input": {
+      "model": "surreel:block/transport_pipe/transport_pipe_turn",
+      "y": 180
+    },
+    "facing=up,down=none,east=none,west=input,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_turn",
+      "y": 270
+    },
+    "facing=up,down=none,east=none,west=none,north=input,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_turn"
+    },
+    "facing=up,down=none,east=input,west=none,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe_turn",
+      "y": 90
+    },
+
+    "facing=up,down=input,east=none,west=none,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe",
+      "x": 90
+    },
+    "facing=up,down=none,east=none,west=none,north=none,south=none": {
+      "model": "surreel:block/transport_pipe/transport_pipe",
+      "x": 90
+    },
+
+
+
+    "facing=down": {
+      "model": "surreel:block/transport_pipe/transport_pipe",
+      "x": 270
+    }
+  }
+}

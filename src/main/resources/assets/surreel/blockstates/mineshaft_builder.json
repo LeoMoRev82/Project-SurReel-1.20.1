@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "surreel:block/mineshaft_builder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "surreel:block/mineshaft_builder"
+    },
+    "facing=south": {
+      "model": "surreel:block/mineshaft_builder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "surreel:block/mineshaft_builder",
+      "y": 270
+    }
+  }
+}
