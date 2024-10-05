@@ -12,6 +12,8 @@
 	"block.surreel.quarry" 					: "Quarry",
 	"block.surreel.quarry_marker" 			: "Quarry Marker",
 
+	"block.surreel.re_ticker_module" 		: "ReTicker Module",
+	"block.surreel.freezer_module" 			: "Freezer Module",
 	"block.surreel.silk_touch_module" 		: "Silk Touch Module",
 	"block.surreel.fortune_i_module" 		: "Fortune I Module",
 	"block.surreel.fortune_ii_module" 		: "Fortune II Module",

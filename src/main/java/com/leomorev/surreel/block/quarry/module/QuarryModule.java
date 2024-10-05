@@ -30,7 +30,8 @@ public interface QuarryModule {
         EFFICIENCY  (new ResourceLocation(SurReelMain.MODID, "efficiency_module")),
         SILK_TOUCH  (new ResourceLocation(SurReelMain.MODID, "silk_touch_module")),
         PUMP        (new ResourceLocation(SurReelMain.MODID, "pump_module")),
-        FREEZER     (new ResourceLocation(SurReelMain.MODID, "freezer_module"))
+        FREEZER     (new ResourceLocation(SurReelMain.MODID, "freezer_module")),
+        RE_TICKER   (new ResourceLocation(SurReelMain.MODID, "re_ticker_module"))
         ;
 
         private final ResourceLocation moduleName;

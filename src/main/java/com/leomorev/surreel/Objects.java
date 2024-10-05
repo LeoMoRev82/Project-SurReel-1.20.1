@@ -78,6 +78,7 @@ public class Objects{
     public static final RegistryObject<Block> FORTUNE_II_MODULE         = registerBlock("fortune_ii_module",      FortuneIIModule::new);
     public static final RegistryObject<Block> FORTUNE_III_MODULE        = registerBlock("fortune_iii_module",     FortuneIIIModule::new);
     public static final RegistryObject<Block> FREEZER_MODULE            = registerBlock("freezer_module",         FreezerModule::new);
+    public static final RegistryObject<Block> RE_TICKER_MODULE          = registerBlock("re_ticker_module",       ReTickerModule::new);
 
     //Testing
     public static final RegistryObject<Block> TRASH_CAN                 = registerBlock("trash_can",              ItemTrashCan::new);
