@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    	"particle": "surreel:block/modules/reticker/side",
+		"top": 		"surreel:block/modules/reticker/top",
+		"down": 	"surreel:block/modules/reticker/end",
+        "north": 	"surreel:block/modules/reticker/front_off",
+        "east": 	"surreel:block/modules/reticker/side",
+        "south": 	"surreel:block/modules/reticker/back",
+        "west": 	"surreel:block/modules/reticker/side"
+  }
+}
