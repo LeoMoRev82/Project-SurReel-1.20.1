@@ -68,7 +68,7 @@ public class PumpBlockEntity extends MinerBuilderBlockEntity {
     private boolean pStage3 = false;
 
     public static void tick(Level level, BlockPos pos, BlockState state, PumpBlockEntity be) {
-        if(level.isClientSide){return;}
+        if(level == null || level.isClientSide){return;}
 
         be.ticks++;
         if(be.ticks > 10) {

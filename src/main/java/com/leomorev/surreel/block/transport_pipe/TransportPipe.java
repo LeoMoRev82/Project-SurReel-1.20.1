@@ -57,9 +57,9 @@ public class TransportPipe extends BaseEntityBlock{
 	// ROTATION/FACING
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		Level world = context.getLevel();
+		Level level = context.getLevel();
 		BlockPos pos = context.getClickedPos();
-		return calculateState(world, pos, defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite()));
+		return calculateState(level, pos, defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite()));
 	}
 
 	@Override
@@ -80,13 +80,13 @@ public class TransportPipe extends BaseEntityBlock{
 		builder.add(FACING, CON_NORTH, CON_SOUTH, CON_UP, CON_DOWN, CON_EAST, CON_WEST);
 	}
 
-	public static BlockState calculateState(LevelAccessor world, BlockPos pos, BlockState state) {
-		ConnectorType north 	= getConnectorType(world, pos, Direction.NORTH);
-		ConnectorType south 	= getConnectorType(world, pos, Direction.SOUTH);
-		ConnectorType west 		= getConnectorType(world, pos, Direction.WEST);
-		ConnectorType east 		= getConnectorType(world, pos, Direction.EAST);
-		ConnectorType up 		= getConnectorType(world, pos, Direction.UP);
-		ConnectorType down 		= getConnectorType(world, pos, Direction.DOWN);
+	public static BlockState calculateState(LevelAccessor level, BlockPos pos, BlockState state) {
+		ConnectorType north 	= getConnectorType(level, pos, Direction.NORTH);
+		ConnectorType south 	= getConnectorType(level, pos, Direction.SOUTH);
+		ConnectorType west 		= getConnectorType(level, pos, Direction.WEST);
+		ConnectorType east 		= getConnectorType(level, pos, Direction.EAST);
+		ConnectorType up 		= getConnectorType(level, pos, Direction.UP);
+		ConnectorType down 		= getConnectorType(level, pos, Direction.DOWN);
 		return state
 				.setValue(CON_NORTH, north).setValue(CON_SOUTH, south)
 				.setValue(CON_WEST, west).setValue(CON_EAST, east)

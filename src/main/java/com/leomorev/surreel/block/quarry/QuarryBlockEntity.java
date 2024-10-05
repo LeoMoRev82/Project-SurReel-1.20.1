@@ -67,7 +67,7 @@ public class QuarryBlockEntity extends MinerBuilderBlockEntity implements HasMod
     };
 
     public static void tick(Level level, BlockPos pos, BlockState state, QuarryBlockEntity be) {
-        if(level.isClientSide){return;}
+        if(level == null || level.isClientSide){return;}
         if(level.dimension() == Level.NETHER){be.maxDepth = 0;}
         if(pos.getY() <= be.maxDepth + 6 || (pos.getY() >= 110 && level.dimension() == Level.NETHER)){return;}
 

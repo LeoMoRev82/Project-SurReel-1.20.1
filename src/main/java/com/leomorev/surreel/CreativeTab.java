@@ -52,6 +52,7 @@ public class CreativeTab {
                     //Quarry and Its Modules
                     e.accept(Objects.QUARRY.get());
                     e.accept(Objects.PUMP.get());
+                    e.accept(Objects.FREEZER_MODULE.get());
                     e.accept(Objects.QUARRY_MARKER.get());
                     e.accept(Objects.SILK_TOUCH_MODULE.get());
                     e.accept(Objects.FORTUNE_I_MODULE.get());

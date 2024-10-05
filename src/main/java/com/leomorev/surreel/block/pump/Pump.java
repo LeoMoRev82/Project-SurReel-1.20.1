@@ -21,9 +21,11 @@ import static net.minecraft.world.level.block.state.properties.BlockStatePropert
 
 public class Pump extends BaseEntityBlock implements QuarryModule {
     public static final BooleanProperty ACTIVE = BooleanProperty.create("active");
-    public Pump() {super(Properties.of().sound(SoundType.METAL));}
+    public Pump() {
+        super(Properties.of().sound(SoundType.METAL));
+    }
 
-    // ROTATION/FACING
+    //BlockState Values
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
         return this.defaultBlockState()
@@ -49,6 +51,7 @@ public class Pump extends BaseEntityBlock implements QuarryModule {
         builder.add(ACTIVE);
     }
 
+    //Block Entity Stuff
     @Override
     public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
         return new PumpBlockEntity(pos, state);
@@ -65,6 +68,7 @@ public class Pump extends BaseEntityBlock implements QuarryModule {
         return RenderShape.MODEL;
     }
 
+    //Module Stuff
     @Override
     public ResourceLocation moduleName() {
         return Constant.PUMP.moduleName();

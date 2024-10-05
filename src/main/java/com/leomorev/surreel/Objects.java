@@ -111,6 +111,7 @@ public class Objects{
     public static final RegistryObject<BlockEntityType<TransportPipeBlockEntity>>           TRANSPORT_PIPE_BLOCK_ENTITY     = registerBlockEntityType(TRANSPORT_PIPE, TransportPipeBlockEntity::new);
     public static final RegistryObject<BlockEntityType<QuarryMarkerBlockEntity>>            QUARRY_MARKER_BLOCK_ENTITY      = registerBlockEntityType(QUARRY_MARKER, QuarryMarkerBlockEntity::new);
     public static final RegistryObject<BlockEntityType<PumpBlockEntity>>                    PUMP_BLOCK_ENTITY               = registerBlockEntityType(PUMP, PumpBlockEntity::new);
+    public static final RegistryObject<BlockEntityType<FreezerModuleBlockEntity>>           FREEZER_MODULE_BLOCK_ENTITY     = registerBlockEntityType(FREEZER_MODULE, FreezerModuleBlockEntity::new);
 
     public static final RegistryObject<BlockEntityType<TrashCanBlockEntity>>                TRASH_CAN_BLOCK_ENTITY          = registerBlockEntityType(TRASH_CAN, TrashCanBlockEntity::new);
 

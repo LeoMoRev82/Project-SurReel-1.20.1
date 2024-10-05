@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    	"particle": "surreel:block/modules/freezer/side",
+		"top": 		"surreel:block/modules/freezer/top",
+		"down": 	"surreel:block/modules/freezer/end",
+        "north": 	"surreel:block/modules/freezer/front_off",
+        "east": 	"surreel:block/modules/freezer/side",
+        "south": 	"surreel:block/modules/freezer/back",
+        "west": 	"surreel:block/modules/freezer/side"
+  }
+}
